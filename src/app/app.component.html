@@ -1,0 +1,18 @@
+<div class="content" role="main">
+
+  <span>Welcome to {{ title }}!</span>
+  <br>
+  <p>Click Client Registration to fill in the client details to create an account.</p>
+  <p>Click Meeting Schedule to schedule a meeting for the client.</p>
+  
+  <ul class="horizontal-nav">
+    <li><a [routerLink]="['/home']">Home</a></li>
+    <br>
+    <li><a [routerLink]="['/client-registration']">Client-Registration</a></li>
+    <br>
+    <li><a [routerLink]="['/meeting-schedule']">Schedule-Meeting</a></li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+</div>
